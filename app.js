@@ -51,6 +51,10 @@ https.get(url, function (res) {
                         
                         allPoke.push(dataPoke);
 
+                        unique = allPoke.filter((set => f => !set.has(f.name) && set.add(f.name))(new Set));
+
+                        allPoke.length = 0;
+                        allPoke.push.apply(allPoke, unique);
 
                         
                        
