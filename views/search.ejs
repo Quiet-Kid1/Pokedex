@@ -1,0 +1,46 @@
+<%- include('header'); -%>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="https://pokeapi.co/">PokeAPI</a>
+    <form class="form-inline" action="/pokedex" method="post">
+      <input class="form-control mr-sm-2" name="searchPoke" type="search" placeholder="e.g. ditto" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search pokemon</button>
+    </form>
+  </nav>
+
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <p class="lead">Your searched pokemon : </p>
+
+            <div class="col-lg-3 col-md-4" style="text-align: center; width: 500px; margin: 0 auto;" >
+              <div class="card mb-4 shadow-sm" style="text-align: left;">
+                <img src="<%= getPoke.pict %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title pricing-card-title"> <%= getPoke.name %> </h2>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Weight: <%= getPoke.weight %> </li>
+                    <li>Height: <%= getPoke.weight %> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+    
+         
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+
+
+
+
+      </div>
+     </div>
+
+
+</body>
+<%- include('footer'); -%>
+
+
+
+

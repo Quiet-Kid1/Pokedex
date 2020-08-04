@@ -1,0 +1,48 @@
+<%- include('header'); -%>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="https://pokeapi.co/">PokeAPI</a>
+    <form class="form-inline" action="/pokedex" method="post">
+      <input class="form-control mr-sm-2" name="searchPoke" type="search" placeholder="e.g. ditto" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search pokemon</button>
+    </form>
+  </nav>
+
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h2 style="color: #97999b">See data pokemon kanto below : </h2>
+        <br>
+        <p style="color: #97999b; text-align: right; ">Sorry no hd pict from API :(</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+
+        <% allPoke.slice(0,51).forEach(function(pokemon) { %>
+          
+        <div class="col-lg-3 col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="<%= pokemon.pict %>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h2 class="card-title pricing-card-title"> <%= pokemon.name %></h2>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Weight: <%= pokemon.weight %> </li>
+                <li>Height: <%= pokemon.height %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <% }); %>
+
+
+      </div>
+     </div>
+
+
+</body>
+<%- include('footer'); -%>
+
+
+
+

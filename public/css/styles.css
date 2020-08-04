@@ -1,0 +1,37 @@
+h1{
+  text-align: center;
+}
+
+.header {
+  height: 30%;
+  background: red;
+  color: white;
+  text-align: center;
+}
+
+@-webkit-keyframes dots {
+   0% { background-position: 0px; }
+   100% { background-position: 50px; }
+}
+
+.animate {
+   background: linear-gradient(to right, white 50%, black 50%);
+   color: transparent;
+   -webkit-background-clip: text;
+   -webkit-animation: dots 1s infinite steps(4);
+   padding-right: 40px;
+   margin-right: -40px;
+}
+
+footer { 
+   position: relative;
+   left: 0;
+   bottom: 0;
+   height: 100px;
+   width: 100%;
+   overflow:hidden;
+   background-color: #96bb7c;
+   padding: 40px;
+   text-align: center;
+   color: black;
+}
