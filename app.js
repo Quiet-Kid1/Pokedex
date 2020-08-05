@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 app.get("/", function(req, res){
 
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=51";
+const url = "https://pokeapi.co/api/v2/pokemon?limit=151";
 
 https.get(url, function (res) {
     var chunks = [];
