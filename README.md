@@ -1,5 +1,7 @@
 # Pokedex
 
+Build by Node.js and EJS 
+
 Data pokedex from pokeAPI (https://pokeapi.co/)
 
 feature :
